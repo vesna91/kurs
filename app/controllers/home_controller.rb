@@ -7,6 +7,8 @@ class HomeController < ApplicationController
       #'Aida',
       #'Selma'
     #]
+    #izvuci sve proizvode i ispisati ih na view
+    #@products=Product.all
     developers = [
       Developer.new('Ivan','Kovac',['ruby','php']),
       Developer.new('Ivan2','Kovac2',['rails','php']),
@@ -52,7 +54,7 @@ class HomeController < ApplicationController
       end
 
     end
-  
+
 
   def help
     puts params.inspect
